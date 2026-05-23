@@ -1,0 +1,170 @@
+[
+  {
+    "scenario_id": 0,
+    "task_type": "A",
+    "patient_age": 40,
+    "patient_context": "A 40-year-old patient underwent epigenetic clock testing.",
+    "clock_values": {
+      "horvath": 52.8,
+      "grimage": 49.3,
+      "dunedin_pace": 0.996,
+      "senescent_fraction_pct": 3.0
+    },
+    "question": "Given Horvath age 52.8, GrimAge 49.3, and DunedinPACE 0.996, what does this clock profile suggest about this patient's aging trajectory?",
+    "ground_truth": {
+      "accelerated_aging": true,
+      "fast_pacer": false,
+      "high_mortality_risk": true,
+      "clock_discordance": false,
+      "high_senescence": false,
+      "intervention_effective": null,
+      "overall_status": "at_risk"
+    },
+    "simulation_params": {
+      "steps": 119,
+      "grid": "30x30",
+      "tissue_type": "blood"
+    },
+    "timestamp": "2026-05-23T20:49:23.984167+00:00"
+  },
+  {
+    "scenario_id": 1,
+    "task_type": "A",
+    "patient_age": 60,
+    "patient_context": "A 60-year-old patient underwent epigenetic clock testing.",
+    "clock_values": {
+      "horvath": 50.0,
+      "grimage": 66.2,
+      "dunedin_pace": 0.956,
+      "senescent_fraction_pct": 3.0
+    },
+    "question": "Given Horvath age 50.0, GrimAge 66.2, and DunedinPACE 0.956, what does this clock profile suggest about this patient's aging trajectory?",
+    "ground_truth": {
+      "accelerated_aging": false,
+      "fast_pacer": false,
+      "high_mortality_risk": false,
+      "clock_discordance": true,
+      "high_senescence": false,
+      "intervention_effective": null,
+      "overall_status": "normal"
+    },
+    "simulation_params": {
+      "steps": 82,
+      "grid": "30x30",
+      "tissue_type": "blood"
+    },
+    "timestamp": "2026-05-23T20:49:35.784022+00:00"
+  },
+  {
+    "scenario_id": 2,
+    "task_type": "B",
+    "patient_age": 47,
+    "patient_context": "A 47-year-old patient underwent epigenetic clock testing.",
+    "clock_values": {
+      "horvath": 48.5,
+      "grimage": 59.9,
+      "dunedin_pace": 0.871,
+      "senescent_fraction_pct": 3.0
+    },
+    "question": "Given Horvath age 48.5, GrimAge 59.9, and DunedinPACE 0.871, what does this clock profile suggest about this patient's aging trajectory?",
+    "ground_truth": {
+      "accelerated_aging": false,
+      "fast_pacer": false,
+      "high_mortality_risk": true,
+      "clock_discordance": true,
+      "high_senescence": false,
+      "intervention_effective": null,
+      "overall_status": "at_risk"
+    },
+    "pre_intervention": {
+      "horvath": 51.124420166015625,
+      "grimage_proxy": 54.516666666666666,
+      "dunedinpace_proxy": 0.9743808211440779
+    },
+    "post_intervention": {
+      "horvath": 48.543087005615234,
+      "grimage_proxy": 59.93333333333333,
+      "dunedinpace_proxy": 0.870982067646593
+    },
+    "intervention_type": "senolytic therapy (D+Q)",
+    "simulation_params": {
+      "steps": 163,
+      "grid": "30x30",
+      "tissue_type": "adipose"
+    },
+    "timestamp": "2026-05-23T20:49:57.296129+00:00"
+  },
+  {
+    "scenario_id": 3,
+    "task_type": "C",
+    "patient_age": 45,
+    "patient_context": "A 45-year-old patient underwent epigenetic clock testing.",
+    "clock_values": {
+      "horvath": 50.1,
+      "grimage": 51.4,
+      "dunedin_pace": 0.96,
+      "senescent_fraction_pct": 3.0
+    },
+    "question": "Given Horvath age 50.1, GrimAge 51.4, and DunedinPACE 0.960, what does this clock profile suggest about this patient's aging trajectory?",
+    "ground_truth": {
+      "accelerated_aging": true,
+      "fast_pacer": false,
+      "high_mortality_risk": false,
+      "clock_discordance": false,
+      "high_senescence": false,
+      "intervention_effective": null,
+      "overall_status": "normal"
+    },
+    "tissue_1": {
+      "type": "blood",
+      "clocks": {
+        "horvath": 50.06575012207031,
+        "grimage_proxy": 51.35,
+        "dunedinpace_proxy": 0.9603669628380558
+      }
+    },
+    "tissue_2": {
+      "type": "saliva",
+      "clocks": {
+        "horvath": 50.32087326049805,
+        "grimage_proxy": 51.35,
+        "dunedinpace_proxy": 0.9600818115715565
+      }
+    },
+    "simulation_params": {
+      "steps": 84,
+      "grid": "30x30",
+      "tissue_type": "blood+saliva"
+    },
+    "timestamp": "2026-05-23T20:50:17.116494+00:00"
+  },
+  {
+    "scenario_id": 4,
+    "task_type": "D",
+    "patient_age": 38,
+    "patient_context": "A 38-year-old patient underwent epigenetic clock testing.",
+    "clock_values": {
+      "horvath": 54.4,
+      "grimage": 49.1,
+      "dunedin_pace": 1.025,
+      "senescent_fraction_pct": 3.6
+    },
+    "question": "Given Horvath age 54.4, GrimAge 49.1, and DunedinPACE 1.025, what does this clock profile suggest about this patient's aging trajectory?",
+    "ground_truth": {
+      "accelerated_aging": true,
+      "fast_pacer": false,
+      "high_mortality_risk": true,
+      "clock_discordance": true,
+      "high_senescence": false,
+      "intervention_effective": null,
+      "overall_status": "at_risk"
+    },
+    "confounder": "Patient started metformin 6 months ago",
+    "simulation_params": {
+      "steps": 138,
+      "grid": "30x30",
+      "tissue_type": "saliva"
+    },
+    "timestamp": "2026-05-23T20:50:35.863305+00:00"
+  }
+]
