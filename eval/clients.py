@@ -49,7 +49,7 @@ class Client(Protocol):
 
 class ClaudeClient:
     name = "claude"
-    model = "claude-sonnet-4-5-20250929"
+    model = "claude-sonnet-4-6"
 
     def __init__(self, api_key: str | None = None):
         self.api_key = api_key or os.environ.get("ANTHROPIC_API_KEY", "")
