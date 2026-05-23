@@ -1,0 +1,13 @@
+```json
+{
+  "labels": {
+    "accelerated_aging": false,
+    "fast_pacer": false,
+    "high_mortality_risk": false,
+    "clock_discordance": true,
+    "intervention_effective": null
+  },
+  "primary_signal_clock": "grimage",
+  "explanation": "The 4.2-year GrimAge increase over 6 months is striking and represents clock discordance (Horvath changed only 0.3 years while GrimAge changed 4.2 years, difference >5). However, this likely reflects GrimAge's sensitivity to plasma protein changes rather than true accelerated aging, as Horvath (mitotic clock) and DunedinPACE (pace of aging) remained stable. SSRIs can alter inflammatory markers and metabolic proteins that GrimAge incorporates, creating transient elevation without corresponding changes in cellular aging or mortality risk trajectory."
+}
+```

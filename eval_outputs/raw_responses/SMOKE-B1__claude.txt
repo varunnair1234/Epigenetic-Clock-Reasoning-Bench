@@ -1,0 +1,13 @@
+```json
+{
+  "labels": {
+    "accelerated_aging": false,
+    "fast_pacer": false,
+    "high_mortality_risk": true,
+    "clock_discordance": false,
+    "intervention_effective": true
+  },
+  "primary_signal_clock": "dunedinpace",
+  "explanation": "The intervention shows effectiveness primarily through DunedinPACE, which decreased from 1.18 to 1.04 (0.14 reduction, well above the 0.05 threshold), indicating a meaningful slowing of the pace of aging. While Horvath and GrimAge show modest improvements (0.7 and 0.2 years respectively), DunedinPACE provides the strongest signal as it specifically measures rate of biological aging and is most responsive to interventions over 12-month timeframes."
+}
+```
