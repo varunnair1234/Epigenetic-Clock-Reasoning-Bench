@@ -1,0 +1,13 @@
+```json
+{
+  "labels": {
+    "accelerated_aging": true,
+    "fast_pacer": false,
+    "high_mortality_risk": true,
+    "clock_discordance": true,
+    "intervention_effective": null
+  },
+  "primary_signal_clock": "grimage",
+  "explanation": "The GrimAge score exceeds chronological age by 7.8 years, indicating elevated systemic inflammation or metabolic dysfunction. Horvath age is also advanced by 2.2 years, suggesting developmental gene silencing. The 7.6-year gap between Horvath and GrimAge signals discordance, with GrimAge's inflammatory/metabolic components driving higher mortality risk. DunedinPACE remains within normal range, showing no evidence of accelerated damage accumulation."
+}
+```

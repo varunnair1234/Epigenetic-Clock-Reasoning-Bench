@@ -1,0 +1,13 @@
+```json
+{
+  "labels": {
+    "accelerated_aging": true,
+    "fast_pacer": false,
+    "high_mortality_risk": false,
+    "clock_discordance": true,
+    "intervention_effective": null
+  },
+  "primary_signal_clock": "horvath",
+  "explanation": "The saliva Horvath age (63) exceeds the blood Horvath age (55) by 8 years, aligning with the expected 1.5–2× faster drift in oral tissue. This divergence reflects tissue-specific aging dynamics rather than systemic acceleration, as GrimAge and DunedinPACE are unavailable to assess multi-tissue concordance. The absence of intervention data precludes evaluating causal drivers or treatment effects."
+}
+```

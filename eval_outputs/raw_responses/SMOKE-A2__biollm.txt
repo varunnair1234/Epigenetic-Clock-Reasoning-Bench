@@ -1,0 +1,13 @@
+```json
+{
+  "labels": {
+    "accelerated_aging": false,
+    "fast_pacer": false,
+    "high_mortality_risk": false,
+    "clock_discordance": false,
+    "intervention_effective": null
+  },
+  "primary_signal_clock": null,
+  "explanation": "The individual's biological age aligns closely with chronological age across all clocks, showing no significant deviations in developmental gene silencing (Horvath), inflammatory/metabolic burden (GrimAge), or damage accumulation (DunedinPACE). The absence of accelerated signals suggests typical aging for her demographic, with no evidence of premature senescence or intervention effects."
+}
+```
