@@ -117,28 +117,21 @@ def main() -> None:
     if args.evaluate or args.full or args.demo:
         print("\n[3/4] Evaluating models...")
 
-        if not os.environ.get("ANTHROPIC_API_KEY"):
-            print("  ERROR: ANTHROPIC_API_KEY required for evaluation")
-            print("  Set with: $env:ANTHROPIC_API_KEY = 'your-key'")
-            sys.exit(1)
-
         bench_for_eval = (
             "benchmark/demo_benchmark.json" if args.demo else str(benchmark_path)
         )
 
-        eval_harness_path = Path("evaluation/eval_harness.py")
-        if eval_harness_path.exists():
-            try:
-                from evaluation.eval_harness import EvalHarness
-                harness = EvalHarness()
-                results = harness.run(bench_for_eval)
-                print(results)
-            except Exception as exc:
-                print(f"  Eval harness not ready yet ({exc})")
-        else:
-            print("  Eval harness not built yet.")
-            print("  Run Varun's evaluation module when ready.")
-            print("  Expected: evaluation/eval_harness.py")
+        # Delegate to the actual harness at eval/run_eval.py. Authentication
+        # checks live inside the harness (one per provider) so we don't gate
+        # on ANTHROPIC_API_KEY here — a missing key for one provider still
+        # lets the others run.
+        import subprocess
+        cmd = [sys.executable, "-m", "eval.run_eval", "--benchmark", bench_for_eval]
+        if args.demo:
+            cmd += ["--limit", "5"]
+        result = subprocess.run(cmd, cwd=str(_REPO_ROOT))
+        if result.returncode != 0:
+            print(f"  Eval harness exited with status {result.returncode}")
 
     else:
         print("\n[3/4] Skipping evaluation")
@@ -155,21 +148,21 @@ def main() -> None:
     else:
         print("  benchmark/benchmark.json    MISSING")
 
-    results_dir = Path("evaluation/results")
-    print(f"  evaluation/results/         {'EXISTS' if results_dir.exists() else 'MISSING'}")
+    eval_out = Path("eval_outputs")
+    print(f"  eval_outputs/               {'EXISTS' if eval_out.exists() else 'MISSING'}")
 
-    leaderboard = Path("leaderboard.csv")
-    print(f"  leaderboard.csv             {'EXISTS' if leaderboard.exists() else 'MISSING'}")
+    leaderboard = eval_out / "leaderboard.csv"
+    print(f"  eval_outputs/leaderboard.csv {'EXISTS' if leaderboard.exists() else 'MISSING'}")
 
-    detailed = Path("detailed_scores.json")
-    print(f"  detailed_scores.json        {'EXISTS' if detailed.exists() else 'MISSING'}")
+    detailed = eval_out / "details.json"
+    print(f"  eval_outputs/details.json    {'EXISTS' if detailed.exists() else 'MISSING'}")
 
     print("\nNext steps:")
-    if benchmark_path.exists() and not results_dir.exists():
+    if benchmark_path.exists() and not eval_out.exists():
         print("  → Run evaluation: py pipeline.py --evaluate")
-    elif benchmark_path.exists() and results_dir.exists():
-        print("  → Open frontend to view results")
-        print("  → Run demo: py pipeline.py --demo")
+    elif benchmark_path.exists() and eval_out.exists():
+        print("  → Open eval_outputs/leaderboard.csv to view results")
+        print("  → Quick demo: py pipeline.py --demo")
 
     print("\nDemo command:  py pipeline.py --demo")
     print("Full run:      py pipeline.py --full")

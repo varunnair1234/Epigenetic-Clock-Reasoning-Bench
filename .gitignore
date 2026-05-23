@@ -1,0 +1,38 @@
+# Secrets — NEVER commit
+.env
+.env.local
+*.key
+*.pem
+
+# Python build / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build / dist
+*.egg-info/
+build/
+dist/
+
+# OS / editor
+.DS_Store
+*.swp
+
+# Local raw data dumps (too large; reproducible from GEO)
+/scratch/
+*.tar
+*.idat
+GSE*_RAW.tar
+GSE*_signal_intensities*
+
+# Eval harness outputs — regenerable
+/eval_outputs/
+/runs/
