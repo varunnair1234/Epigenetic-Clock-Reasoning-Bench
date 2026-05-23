@@ -82,7 +82,10 @@ class ClaudeClient:
 
 class GeminiClient:
     name = "gemini"
-    model = "gemini-2.5-flash"
+    # Lowest-tier variant of 2.5: separate quota bucket, much higher free-tier
+    # RPD than 2.5-flash. Capability is sufficient for the benchmark reasoning
+    # tasks. Upgrade to gemini-2.5-flash or gemini-2.5-pro if billing is enabled.
+    model = "gemini-2.5-flash-lite"
 
     def __init__(self, api_key: str | None = None):
         self.api_key = api_key or os.environ.get("GOOGLE_API_KEY", "")

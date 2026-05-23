@@ -88,13 +88,17 @@ def test_claude(api_key: str) -> tuple[bool, str]:
 def test_gemini(api_key: str) -> tuple[bool, str]:
     if not api_key or api_key == "XXX":
         return False, "GOOGLE_API_KEY missing or still XXX"
-    model = "gemini-2.5-flash"  # Pro has tight free-tier quota; Flash has plenty
+    model = "gemini-2.5-flash-lite"  # Lowest tier, separate quota bucket
     status, body = post_json(
         f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}",
         headers={"content-type": "application/json"},
         body={
             "contents": [{"parts": [{"text": "Reply with exactly: OK"}]}],
-            "generationConfig": {"maxOutputTokens": 16, "temperature": 0.0},
+            "generationConfig": {
+                "maxOutputTokens": 16,
+                "temperature": 0.0,
+                "thinkingConfig": {"thinkingBudget": 0},
+            },
         },
     )
     if status == 200:
