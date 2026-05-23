@@ -79,8 +79,8 @@ class ClaudeClient:
 
 class GeminiClient:
     name = "gemini"
-    # Lowest-tier 2.5 variant: separate quota bucket, generous free-tier RPD.
-    model = "gemini-2.5-flash-lite"
+    # Fallback chain: try models in order until one succeeds
+    models = ["gemini-1.5-flash", "gemini-1.5-flash-8b", "gemini-2.0-flash-lite"]
 
     def __init__(self, api_key: str | None = None):
         self.api_key = api_key or os.environ.get("GOOGLE_API_KEY", "")
@@ -88,30 +88,36 @@ class GeminiClient:
             raise ClientError("GOOGLE_API_KEY not set")
 
     def complete(self, prompt: str, *, max_tokens: int = 800, temperature: float = 0.0) -> str:
-        url = (
-            f"https://generativelanguage.googleapis.com/v1beta/"
-            f"models/{self.model}:generateContent?key={self.api_key}"
-        )
-        data = _post_json(
-            url,
-            headers={"content-type": "application/json"},
-            body={
-                "contents": [{"parts": [{"text": prompt}]}],
-                "generationConfig": {
-                    "maxOutputTokens": max_tokens,
-                    "temperature": temperature,
-                    # Gemini 2.5 otherwise burns most of max_tokens on
-                    # internal "thinking" before producing visible output.
-                    "thinkingConfig": {"thinkingBudget": 0},
-                },
-            },
-            timeout=60.0,
-        )
-        try:
-            parts = data["candidates"][0]["content"]["parts"]
-        except (KeyError, IndexError):
-            return ""
-        return "".join(p.get("text", "") for p in parts if "text" in p)
+        last_error = None
+        for model in self.models:
+            try:
+                url = (
+                    f"https://generativelanguage.googleapis.com/v1beta/"
+                    f"models/{model}:generateContent?key={self.api_key}"
+                )
+                data = _post_json(
+                    url,
+                    headers={"content-type": "application/json"},
+                    body={
+                        "contents": [{"parts": [{"text": prompt}]}],
+                        "generationConfig": {
+                            "maxOutputTokens": max_tokens,
+                            "temperature": temperature,
+                            # Gemini 2.5 otherwise burns most of max_tokens on
+                            # internal "thinking" before producing visible output.
+                            "thinkingConfig": {"thinkingBudget": 0},
+                        },
+                    },
+                    timeout=60.0,
+                )
+                parts = data["candidates"][0]["content"]["parts"]
+                return "".join(p.get("text", "") for p in parts if "text" in p)
+            except (ClientError, KeyError, IndexError) as e:
+                last_error = e
+                continue  # Try next model in fallback chain
+
+        # All models failed
+        raise ClientError(f"All Gemini models failed. Last error: {last_error}")
 
 
 # ---------- HuggingFace Inference Endpoint / BioLLM ----------
