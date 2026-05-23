@@ -46,8 +46,13 @@ DIVISION_PROBABILITY = 0.05              # per cell per month (homeostatic turno
 # our 200-month window.
 ROS_DAMAGE_PER_TIMESTEP_MEAN = 0.005
 ROS_DAMAGE_PER_TIMESTEP_STD = 0.002
-DAMAGE_REPAIR_PER_TIMESTEP = 0.004       # DNA repair counters most ROS damage
-SASP_DAMAGE_AMPLIFIER = 0.001            # extra damage per SASP signal received
+DAMAGE_REPAIR_PER_TIMESTEP = 0.0042      # net damage gain ~0.0008 / step
+                                         # → ~0.16 total over 200 steps,
+                                         #   enough to push some cells over
+                                         #   the senescence threshold
+SASP_DAMAGE_AMPLIFIER = 0.0007           # modest cascade — strong enough to
+                                         # produce clustered senescence but
+                                         # not runaway by year 16
 
 INITIAL_DAMAGE_MAX = 0.05                # baseline damage in a "young" cell
 
@@ -66,7 +71,7 @@ SASP_INTENSITY = 1.0                     # per emission, per neighbor
 # ---------------------------------------------------------------------------
 
 STRESS_DAMAGE_THRESHOLD = 0.30           # normal   → stressed
-SENESCENCE_DAMAGE_THRESHOLD = 0.60       # stressed → senescent
+SENESCENCE_DAMAGE_THRESHOLD = 0.55       # stressed → senescent
 DEATH_DAMAGE_THRESHOLD = 0.95            # senescent → dead (cell death is rare
                                          # in the 16-year window; senescent
                                          # cells are notoriously long-lived)

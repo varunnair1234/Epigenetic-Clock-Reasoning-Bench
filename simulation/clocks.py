@@ -87,7 +87,9 @@ def grimage_proxy(
     TODO(stretch): replace with the real GrimAge model (needs ~1030 CpGs +
     plasma protein proxies; requires expanded CellAgent methylation state).
     """
-    acceleration = (senescent_fraction - 0.05) * 60.0 + mean_sasp_burden * 0.4
+    # Calibrated so 12% senescent + moderate SASP gives ~+5y acceleration,
+    # matching the cohort means in Lu 2019 (GrimAge paper).
+    acceleration = (senescent_fraction - 0.05) * 40.0 + mean_sasp_burden * 0.2
     return chronological_age + acceleration
 
 
@@ -105,4 +107,7 @@ def dunedinpace_proxy(mean_damage: float, senescent_fraction: float) -> float:
     TODO(stretch): replace with the real DunedinPACE model (173-CpG ridge
     regression with published weights).
     """
-    return 1.0 + (mean_damage - 0.15) * 2.0 + (senescent_fraction - 0.05) * 2.0
+    # Scaled so a healthy adult (low damage, low sen_frac) lands near 1.0 and a
+    # clearly accelerated phenotype (mean_damage ≈ 0.4, sen_frac ≈ 0.12) lands
+    # near 1.3 — within Belsky 2022's observed cohort spread.
+    return 1.0 + (mean_damage - 0.15) * 0.8 + (senescent_fraction - 0.05) * 1.5
