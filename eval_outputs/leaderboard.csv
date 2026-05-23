@@ -1,0 +1,11 @@
+task_type,model,n_scenarios,earned,max,pct,errors,parse_fails
+ALL,biollm,200,4765,8600,55.4,0,16
+ALL,claude,200,6640,8600,77.2,0,0
+A_clock_interpretation,biollm,80,2300,3600,63.9,0,8
+A_clock_interpretation,claude,80,3460,3600,96.1,0,0
+B_intervention_reasoning,biollm,50,900,2000,45.0,0,2
+B_intervention_reasoning,claude,50,800,2000,40.0,0,0
+C_multi_tissue_discordance,biollm,40,1150,1800,63.9,0,1
+C_multi_tissue_discordance,claude,40,1585,1800,88.1,0,0
+D_confounders_artifacts,biollm,30,415,1200,34.6,0,5
+D_confounders_artifacts,claude,30,795,1200,66.2,0,0
