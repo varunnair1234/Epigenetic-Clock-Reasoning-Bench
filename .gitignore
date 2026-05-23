@@ -1,0 +1,38 @@
+# Secrets — NEVER commit
+.env
+.env.local
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build / dist
+*.egg-info/
+build/
+dist/
+
+# OS / editor
+.DS_Store
+*.swp
+
+# Local-only data dumps (raw GEO files, scratch)
+/scratch/
+*.tar
+*.idat
+GSE*_RAW.tar
+GSE*_signal_intensities*
+
+# Benchmark runs (regenerable; keep only the curated one)
+/runs/
+/eval_outputs/
