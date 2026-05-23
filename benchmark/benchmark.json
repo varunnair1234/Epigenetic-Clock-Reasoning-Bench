@@ -122,7 +122,7 @@
           "accelerated_aging": false,
           "fast_pacer": false,
           "high_mortality_risk": false,
-          "clock_discordance": true,
+          "clock_discordance": false,
           "intervention_effective": true
         },
         "primary_signal_clock": "dunedinpace",
@@ -203,7 +203,7 @@
           "accelerated_aging": false,
           "fast_pacer": false,
           "high_mortality_risk": false,
-          "clock_discordance": true,
+          "clock_discordance": false,
           "intervention_effective": null
         },
         "primary_signal_clock": null,
