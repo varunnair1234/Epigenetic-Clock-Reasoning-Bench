@@ -133,6 +133,15 @@ def main() -> int:
             parsed = scorer.parse_response(raw) if not error else {}
             sc = scorer.score(parsed, scenario.get("ground_truth", {}), task_letter)
 
+            # Confidence: float in [0,1]. Coerce robustly; default None.
+            conf_raw = (parsed or {}).get("confidence")
+            try:
+                conf = float(conf_raw) if conf_raw is not None else None
+                if conf is not None:
+                    conf = max(0.0, min(1.0, conf))
+            except (TypeError, ValueError):
+                conf = None
+
             details.append({
                 "scenario_id": sid,
                 "task_type": task_full,
@@ -141,6 +150,7 @@ def main() -> int:
                 "error": error,
                 "parse_ok": sc["parse_ok"],
                 "predicted_labels": parsed.get("labels") if parsed else None,
+                "predicted_confidence": conf,
                 "ground_truth": scenario.get("ground_truth"),
                 "scores": sc,
             })

@@ -102,6 +102,8 @@ Respond with a single JSON object inside a ```json fenced block, with EXACTLY th
     "intervention_effective": <true|false|null>
   }},
   "primary_signal_clock": <"horvath"|"grimage"|"dunedinpace"|null>,
+  "confidence": <float from 0.0 to 1.0 — your subjective probability that ALL of the
+                 above labels are correct. Be honest: 0.5 means coin-flip.>,
   "explanation": "<2-4 sentence rationale>"
 }}
 
