@@ -28,15 +28,6 @@ export default function Hero() {
         <Stat label="Data source"       value={stats?.data_source ?? "—"} small />
       </div>
 
-      <LaymanExplanation>
-        <strong>What is this?</strong> EPOCH is a test to see if AI models like ChatGPT or Claude actually understand biological aging clocks.
-        These clocks predict how fast you're aging and your mortality risk by reading chemical tags on your DNA.
-        <br /><br />
-        <strong>Why does it matter?</strong> Doctors are starting to use AI to interpret these aging tests. But nobody's checked
-        if the AI truly understands what the numbers mean. We created {stats?.n_scenarios ?? "200"} realistic patient scenarios
-        where we KNOW the right answer, then tested AI models to see if they get it right. Best score so far: {stats?.best_accuracy_pct.toFixed(1) ?? "77"}%
-        — meaning even the smartest AI still makes mistakes 1 in 4 times.
-      </LaymanExplanation>
     </section>
   );
 }
