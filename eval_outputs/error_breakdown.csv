@@ -1,0 +1,17 @@
+model,category,count,pct_of_wrong
+biollm,clock_confusion,49,34.0
+biollm,direction_over,53,36.8
+biollm,direction_under,16,11.1
+biollm,missed_discordance,11,7.6
+biollm,hallucinated_discordance,26,18.1
+biollm,confounder_blind,9,6.2
+biollm,hallucinated_intervention,42,29.2
+biollm,error_or_parse_fail,16,11.1
+biollm,other,15,10.4
+claude,clock_confusion,5,5.4
+claude,direction_over,5,5.4
+claude,direction_under,3,3.3
+claude,missed_discordance,2,2.2
+claude,hallucinated_discordance,22,23.9
+claude,hallucinated_intervention,49,53.3
+claude,other,25,27.2

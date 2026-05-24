@@ -1,0 +1,5306 @@
+{
+  "biollm": [
+    {
+      "scenario_id": "0",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "error_or_parse_fail"
+      ],
+      "error": null
+    },
+    {
+      "scenario_id": "1",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "3",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "4",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "5",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "accelerated"
+      }
+    },
+    {
+      "scenario_id": "6",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "7",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "error_or_parse_fail"
+      ],
+      "error": null
+    },
+    {
+      "scenario_id": "8",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "normal"
+      }
+    },
+    {
+      "scenario_id": "9",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "decelerated"
+      }
+    },
+    {
+      "scenario_id": "11",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "13",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "14",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "15",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "16",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "20",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "22",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "25",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "decelerated"
+      }
+    },
+    {
+      "scenario_id": "27",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "29",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "error_or_parse_fail"
+      ],
+      "error": null
+    },
+    {
+      "scenario_id": "31",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "normal"
+      }
+    },
+    {
+      "scenario_id": "33",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "error_or_parse_fail"
+      ],
+      "error": null
+    },
+    {
+      "scenario_id": "34",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "35",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "decelerated"
+      }
+    },
+    {
+      "scenario_id": "37",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "42",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "error_or_parse_fail"
+      ],
+      "error": null
+    },
+    {
+      "scenario_id": "43",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "error_or_parse_fail"
+      ],
+      "error": null
+    },
+    {
+      "scenario_id": "45",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "47",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "50",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "normal"
+      }
+    },
+    {
+      "scenario_id": "52",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "54",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "error_or_parse_fail"
+      ],
+      "error": null
+    },
+    {
+      "scenario_id": "58",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "59",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "60",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "61",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "62",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "63",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "65",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "68",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "69",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "70",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "72",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "error_or_parse_fail"
+      ],
+      "error": null
+    },
+    {
+      "scenario_id": "74",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "76",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "77",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "78",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "80",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "81",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "direction_under",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "82",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "direction_under",
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "83",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "84",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "85",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "86",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "87",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "88",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "89",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "error_or_parse_fail"
+      ],
+      "error": null
+    },
+    {
+      "scenario_id": "90",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "direction_under",
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "91",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "direction_under",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "92",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "94",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "95",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "direction_under",
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "96",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "direction_under",
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "97",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "98",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "direction_under",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "99",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "100",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "direction_under",
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "101",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "102",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "103",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "direction_under",
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "104",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "direction_under",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "105",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "106",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "direction_under",
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "107",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "108",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "109",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "110",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "111",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "112",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "direction_under",
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "113",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "114",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "115",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "117",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "118",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "119",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "120",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "121",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "122",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "direction_under",
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "123",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "error_or_parse_fail"
+      ],
+      "error": null
+    },
+    {
+      "scenario_id": "124",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "127",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "direction_under",
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "128",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "direction_under",
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "129",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "130",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "missed_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "134",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "137",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "missed_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "139",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "missed_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "141",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "missed_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "142",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "missed_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "normal"
+      }
+    },
+    {
+      "scenario_id": "144",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "145",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "146",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "147",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "error_or_parse_fail"
+      ],
+      "error": null
+    },
+    {
+      "scenario_id": "148",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "150",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "missed_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "151",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "153",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "154",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_under",
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "156",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "157",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "159",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "missed_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "162",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "163",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "missed_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "164",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "166",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "missed_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "168",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "missed_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "170",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "confounder_blind"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "171",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "confounder_blind"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "172",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "confounder_blind"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "173",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "error_or_parse_fail"
+      ],
+      "error": null
+    },
+    {
+      "scenario_id": "174",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "175",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "accelerated"
+      }
+    },
+    {
+      "scenario_id": "176",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "decelerated"
+      }
+    },
+    {
+      "scenario_id": "177",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "confounder_blind"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "178",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "179",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "missed_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "accelerated"
+      }
+    },
+    {
+      "scenario_id": "180",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "confounder_blind"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "181",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "decelerated"
+      }
+    },
+    {
+      "scenario_id": "182",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "183",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "error_or_parse_fail"
+      ],
+      "error": null
+    },
+    {
+      "scenario_id": "184",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "185",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "error_or_parse_fail"
+      ],
+      "error": null
+    },
+    {
+      "scenario_id": "186",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "confounder_blind"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "187",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "error_or_parse_fail"
+      ],
+      "error": null
+    },
+    {
+      "scenario_id": "188",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "confounder_blind"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "189",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "error_or_parse_fail"
+      ],
+      "error": null
+    },
+    {
+      "scenario_id": "190",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "decelerated"
+      }
+    },
+    {
+      "scenario_id": "191",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "accelerated"
+      }
+    },
+    {
+      "scenario_id": "192",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "decelerated"
+      }
+    },
+    {
+      "scenario_id": "193",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "confounder_blind"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "194",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "196",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "197",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "198",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "confounder_blind"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "199",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    }
+  ],
+  "claude": [
+    {
+      "scenario_id": "5",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "accelerated"
+      }
+    },
+    {
+      "scenario_id": "35",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "decelerated"
+      }
+    },
+    {
+      "scenario_id": "47",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "59",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "61",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "65",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "72",
+      "task_type": "A_clock_interpretation",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "normal"
+      }
+    },
+    {
+      "scenario_id": "80",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "81",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "82",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "83",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "84",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "85",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "86",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "87",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "88",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "89",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "90",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "91",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "92",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "93",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "94",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "95",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "96",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "97",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "98",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "99",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "100",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "101",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "102",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "103",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "105",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "106",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "107",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "108",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "109",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "110",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "111",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "112",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "113",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "114",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "115",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "116",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "117",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "118",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "119",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "120",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "121",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "122",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "123",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "124",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "125",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "126",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "127",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "128",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_discordance",
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "129",
+      "task_type": "B_intervention_reasoning",
+      "categories": [
+        "hallucinated_intervention"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": true
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "144",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "148",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "152",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_under"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "153",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "154",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_under"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "156",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_under",
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "157",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "159",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "direction_over",
+        "clock_confusion",
+        "missed_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "162",
+      "task_type": "C_multi_tissue_discordance",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "170",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "171",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "172",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "173",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "174",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "175",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "accelerated"
+      }
+    },
+    {
+      "scenario_id": "176",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "decelerated"
+      }
+    },
+    {
+      "scenario_id": "177",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "178",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "179",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "missed_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "accelerated"
+      }
+    },
+    {
+      "scenario_id": "180",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "181",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "decelerated"
+      }
+    },
+    {
+      "scenario_id": "182",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "183",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "decelerated"
+      }
+    },
+    {
+      "scenario_id": "184",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "186",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "187",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "normal"
+      }
+    },
+    {
+      "scenario_id": "189",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "190",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "decelerated"
+      }
+    },
+    {
+      "scenario_id": "191",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "hallucinated_discordance"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "accelerated"
+      }
+    },
+    {
+      "scenario_id": "192",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": false,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "decelerated"
+      }
+    },
+    {
+      "scenario_id": "193",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": true,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "194",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "196",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "197",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "198",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": false,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": true,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    },
+    {
+      "scenario_id": "199",
+      "task_type": "D_confounders_artifacts",
+      "categories": [
+        "other"
+      ],
+      "predicted_labels": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "intervention_effective": null
+      },
+      "ground_truth": {
+        "accelerated_aging": true,
+        "fast_pacer": false,
+        "high_mortality_risk": true,
+        "clock_discordance": false,
+        "high_senescence": false,
+        "intervention_effective": null,
+        "overall_status": "at_risk"
+      }
+    }
+  ]
+}
