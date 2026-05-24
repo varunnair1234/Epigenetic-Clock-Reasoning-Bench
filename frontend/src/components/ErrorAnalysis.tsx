@@ -109,13 +109,7 @@ export default function ErrorAnalysis() {
       )}
 
       <LaymanExplanation>
-        <strong>What are these error types?</strong> When AI gets a question wrong, it's not random — there are patterns.
-        "Clock Confusion" means the AI mixed up which test measures what (like confusing a thermometer with a blood pressure cuff).
-        "Direction Errors" mean the AI said someone is aging fast when they're actually aging slow, or vice versa.
-        "Missed Discordance" means the AI didn't notice when different aging clocks disagreed with each other.
-        <br /><br />
-        <strong>Why it matters:</strong> If an AI consistently makes the same type of mistake, doctors need to know that before using it.
-        Parse failures are especially bad — they mean the AI couldn't even format its answer properly, like a doctor writing illegible prescriptions.
+        When AI gets questions wrong, there are patterns: "Clock Confusion" means mixing up which test measures what, "Direction Errors" means saying someone ages fast when they're actually slow. Parse failures are worst — the AI can't even format its answer properly, like a doctor writing illegible prescriptions that pharmacists can't read.
       </LaymanExplanation>
     </section>
   );

@@ -124,12 +124,7 @@ export default function ScoreBreakdown() {
       </div>
 
       <LaymanExplanation>
-        <strong>What am I looking at?</strong> This chart shows which AI model performs best on each type of aging question.
-        Type A tests basic understanding ("Is this person aging fast?"). Type B tests if AI can predict what happens after treatments.
-        Type C tests understanding different tissues (blood vs brain). Type D tests if AI can spot fake signals.
-        <br /><br />
-        <strong>The surprising part:</strong> Sometimes a weaker AI beats a stronger one on specific tasks — shown by the trophy 🏆.
-        This tells us that general-purpose AI and specialized bio-AI have different strengths.
+        This chart shows AI performance across 4 question types: Type A (basic aging understanding), Type B (predicting treatment effects), Type C (different tissues), Type D (spotting fake signals). The trophy 🏆 marks when a weaker AI surprisingly beats a stronger one on a specific task — showing that general and specialized AI have different strengths.
       </LaymanExplanation>
     </section>
   );
