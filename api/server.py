@@ -27,6 +27,7 @@ from typing import Any
 
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 # Make repo root importable when the server is launched from anywhere.
 _REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -311,3 +312,13 @@ def explain(section: str, force_refresh: bool = False) -> dict:
 @app.get("/api/explain_cache_clear")
 def clear_explain_cache() -> dict:
     return {"cleared": explanations.clear_cache()}
+
+
+# ---------- Serve the built React frontend (production single-service deploy) ----------
+#
+# `frontend/dist` is produced by `npm run build` during the Render build step.
+# Mounted last so the explicit `/api/*` routes above always win.
+
+_FRONTEND_DIST = _REPO_ROOT / "frontend" / "dist"
+if _FRONTEND_DIST.exists():
+    app.mount("/", StaticFiles(directory=_FRONTEND_DIST, html=True), name="frontend")
