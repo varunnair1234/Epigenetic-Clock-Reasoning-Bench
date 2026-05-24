@@ -17,7 +17,11 @@ _EXPECTED_TOP_KEYS = [
 _EXPECTED_CLOCK_KEYS = ["horvath", "grimage_proxy", "dunedinpace_proxy"]
 
 
-def derive_ground_truth(sim_output: dict, patient_age: int) -> dict:
+def derive_ground_truth(
+    sim_output: dict,
+    patient_age: int,
+    scenario: dict | None = None,
+) -> dict:
     """Derive binary labels and overall status from a simulation snapshot.
 
     Parameters
@@ -26,6 +30,12 @@ def derive_ground_truth(sim_output: dict, patient_age: int) -> dict:
         A dict returned by ``TissueModel.snapshot()``.
     patient_age:
         Chronological age of the patient in years.
+    scenario:
+        Optional full scenario dict (as stored in benchmark.json).
+        When provided for Type B scenarios, ``intervention_effective`` is
+        derived from the stored ``pre_intervention`` / ``post_intervention``
+        data: effective if post DunedinPACE dropped ≥5% vs pre, or if post
+        senescent fraction dropped ≥20% vs pre.
 
     Returns
     -------
@@ -51,13 +61,28 @@ def derive_ground_truth(sim_output: dict, patient_age: int) -> dict:
     else:
         overall_status = "normal"
 
+    # Intervention effectiveness — only computable for Type B scenarios that
+    # carry pre/post simulation snapshots.
+    intervention_effective: bool | None = None
+    if scenario is not None and str(scenario.get("task_type", "")).startswith("B"):
+        pre = scenario.get("pre_intervention", {})
+        post = scenario.get("post_intervention", {})
+        pre_dunedin = pre.get("dunedinpace_proxy")
+        post_dunedin = post.get("dunedinpace_proxy")
+        pre_sen = pre.get("senescent_fraction")
+        post_sen = post.get("senescent_fraction")
+        if pre_dunedin is not None and post_dunedin is not None:
+            intervention_effective = post_dunedin < (pre_dunedin * 0.95)
+        elif pre_sen is not None and post_sen is not None:
+            intervention_effective = post_sen < (pre_sen * 0.80)
+
     return {
         "accelerated_aging": accelerated_aging,
         "fast_pacer": fast_pacer,
         "high_mortality_risk": high_mortality_risk,
         "clock_discordance": clock_discordance,
         "high_senescence": high_senescence,
-        "intervention_effective": None,
+        "intervention_effective": intervention_effective,
         "overall_status": overall_status,
     }
 

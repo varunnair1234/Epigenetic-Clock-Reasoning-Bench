@@ -2260,7 +2260,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -2299,7 +2299,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -2341,7 +2341,7 @@
       "high_mortality_risk": true,
       "clock_discordance": false,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -2380,7 +2380,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -2422,7 +2422,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -2461,7 +2461,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -2503,7 +2503,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -2542,7 +2542,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -2581,7 +2581,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -2620,7 +2620,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -2659,7 +2659,7 @@
       "high_mortality_risk": true,
       "clock_discordance": false,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -2698,7 +2698,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -2737,7 +2737,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -2776,7 +2776,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -2815,7 +2815,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -2857,7 +2857,7 @@
       "high_mortality_risk": true,
       "clock_discordance": false,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -2896,7 +2896,7 @@
       "high_mortality_risk": true,
       "clock_discordance": false,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -2935,7 +2935,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -2974,7 +2974,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3013,7 +3013,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3052,7 +3052,7 @@
       "high_mortality_risk": true,
       "clock_discordance": false,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3091,7 +3091,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3133,7 +3133,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3172,7 +3172,7 @@
       "high_mortality_risk": true,
       "clock_discordance": false,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3211,7 +3211,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3250,7 +3250,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3289,7 +3289,7 @@
       "high_mortality_risk": true,
       "clock_discordance": false,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3328,7 +3328,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3367,7 +3367,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3406,7 +3406,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3445,7 +3445,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3487,7 +3487,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3526,7 +3526,7 @@
       "high_mortality_risk": true,
       "clock_discordance": false,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3565,7 +3565,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3604,7 +3604,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3646,7 +3646,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3685,7 +3685,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3727,7 +3727,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3766,7 +3766,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3805,7 +3805,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3847,7 +3847,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3886,7 +3886,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3928,7 +3928,7 @@
       "high_mortality_risk": true,
       "clock_discordance": false,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -3967,7 +3967,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -4006,7 +4006,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -4045,7 +4045,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -4084,7 +4084,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -4126,7 +4126,7 @@
       "high_mortality_risk": true,
       "clock_discordance": false,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -4165,7 +4165,7 @@
       "high_mortality_risk": true,
       "clock_discordance": false,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
@@ -4204,7 +4204,7 @@
       "high_mortality_risk": true,
       "clock_discordance": true,
       "high_senescence": false,
-      "intervention_effective": null,
+      "intervention_effective": true,
       "overall_status": "at_risk"
     },
     "pre_intervention": {
