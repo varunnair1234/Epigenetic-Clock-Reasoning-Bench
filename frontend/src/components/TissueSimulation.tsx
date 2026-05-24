@@ -208,15 +208,20 @@ export default function TissueSimulation() {
               ))}
             </div>
 
-            <div className="text-xs text-zinc-400 mb-1">Seed</div>
+            <div className="text-xs text-zinc-400 mb-1">Patient</div>
             <div className="flex gap-2 mb-4">
-              {[7, 13, 42, 99].map(s => (
+              {[
+                { seed: 7, label: "A" },
+                { seed: 13, label: "B" },
+                { seed: 42, label: "C" },
+                { seed: 99, label: "D" }
+              ].map(p => (
                 <button
-                  key={s}
-                  onClick={() => setSeed(s)}
-                  className={`btn flex-1 ${seed === s ? "btn-active" : ""}`}
+                  key={p.seed}
+                  onClick={() => setSeed(p.seed)}
+                  className={`btn flex-1 ${seed === p.seed ? "btn-active" : ""}`}
                 >
-                  {s}
+                  {p.label}
                 </button>
               ))}
             </div>
