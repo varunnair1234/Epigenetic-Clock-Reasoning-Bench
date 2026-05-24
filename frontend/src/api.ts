@@ -29,4 +29,8 @@ export const api = {
   perLabelMetrics: () => get<{ rows: PerLabelMetric[] }>("/api/per_label_metrics"),
   classDistribution: () => get<ClassDistribution>("/api/class_distribution"),
   baselines:       () => get<{ rows: LeaderboardRow[] }>("/api/baselines"),
+  explain:         (section: string) =>
+                    get<{ section: string; text: string; source: string; cached?: boolean; note?: string }>(
+                      `/api/explain?section=${encodeURIComponent(section)}`
+                    ),
 };

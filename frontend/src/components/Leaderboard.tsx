@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { api } from "../api";
 import type { LeaderboardRow } from "../types";
+import LaymanExplanation from "./LaymanExplanation";
 
 const TASK_LETTERS = ["A", "B", "C", "D"];
 
@@ -170,6 +171,13 @@ export default function Leaderboard() {
         </div>
       )}
       {models.length >= 2 && <LeaderboardInsight models={models} />}
+
+      <LaymanExplanation section="leaderboard">
+        Each row is one AI model answering 200 questions about biological aging. The italic
+        baseline rows at the bottom are dumb predictors — always_true predicts True for
+        everything, majority_class always picks the most common answer. If a real AI isn't
+        clearly beating these, it's not reasoning, just pattern-matching.
+      </LaymanExplanation>
     </section>
   );
 }

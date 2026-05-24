@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { api } from "../api";
 import type { ErrorBreakdownRow } from "../types";
+import LaymanExplanation from "./LaymanExplanation";
 
 const CATEGORY_INFO: Record<string, { label: string; color: string; desc: string }> = {
   clock_confusion:           { label: "Clock Confusion",      color: "text-blue-300",
@@ -106,6 +107,16 @@ export default function ErrorAnalysis() {
           reducing its effective accuracy beyond raw scoring.
         </div>
       )}
+
+      <LaymanExplanation>
+        <strong>What are these error types?</strong> When AI gets a question wrong, it's not random — there are patterns.
+        "Clock Confusion" means the AI mixed up which test measures what (like confusing a thermometer with a blood pressure cuff).
+        "Direction Errors" mean the AI said someone is aging fast when they're actually aging slow, or vice versa.
+        "Missed Discordance" means the AI didn't notice when different aging clocks disagreed with each other.
+        <br /><br />
+        <strong>Why it matters:</strong> If an AI consistently makes the same type of mistake, doctors need to know that before using it.
+        Parse failures are especially bad — they mean the AI couldn't even format its answer properly, like a doctor writing illegible prescriptions.
+      </LaymanExplanation>
     </section>
   );
 }

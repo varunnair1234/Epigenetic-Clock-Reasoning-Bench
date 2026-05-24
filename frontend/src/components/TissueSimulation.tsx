@@ -4,6 +4,7 @@ import { OrthographicView } from "@deck.gl/core";
 import { PolygonLayer } from "@deck.gl/layers";
 import { api } from "../api";
 import type { SimulateResponse, Snapshot } from "../types";
+import LaymanExplanation from "./LaymanExplanation";
 
 // Colors keyed to state codes: 0=normal, 1=stressed, 2=senescent, 3=dead.
 const STATE_COLOR: [number, number, number][] = [
@@ -238,6 +239,16 @@ export default function TissueSimulation() {
           </div>
         </div>
       </div>
+
+      <LaymanExplanation section="tissue_simulation">
+        You're watching a virtual patch of tissue age. Each square is one cell.
+        Cells start healthy (green), accumulate random damage and become stressed
+        (yellow), sometimes turn senescent (orange — they stop working right and
+        damage their neighbors), and rarely die (dark red). The four numbers on
+        the right are different ways scientists measure "biological age" from DNA.
+        They often disagree with each other and with calendar age — and that
+        disagreement is exactly what we ask the AIs to interpret.
+      </LaymanExplanation>
     </section>
   );
 }

@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { api } from "../api";
 import type { LeaderboardRow } from "../types";
+import LaymanExplanation from "./LaymanExplanation";
 
 const TASKS = ["A", "B", "C", "D"];
 const MODEL_COLORS: Record<string, string> = {
@@ -121,6 +122,15 @@ export default function ScoreBreakdown() {
           ))}
         </div>
       </div>
+
+      <LaymanExplanation>
+        <strong>What am I looking at?</strong> This chart shows which AI model performs best on each type of aging question.
+        Type A tests basic understanding ("Is this person aging fast?"). Type B tests if AI can predict what happens after treatments.
+        Type C tests understanding different tissues (blood vs brain). Type D tests if AI can spot fake signals.
+        <br /><br />
+        <strong>The surprising part:</strong> Sometimes a weaker AI beats a stronger one on specific tasks — shown by the trophy 🏆.
+        This tells us that general-purpose AI and specialized bio-AI have different strengths.
+      </LaymanExplanation>
     </section>
   );
 }

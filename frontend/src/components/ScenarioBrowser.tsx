@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { api } from "../api";
 import type { BenchmarkScenario } from "../types";
+import LaymanExplanation from "./LaymanExplanation";
 
 const TASKS  = [null, "A", "B", "C", "D"];
 const STATUSES = [null, "at_risk", "accelerated", "normal", "decelerated"];
@@ -71,6 +72,12 @@ export default function ScenarioBrowser() {
           <div className="panel text-zinc-500 text-sm">No scenarios match this filter.</div>
         )}
       </div>
+
+      <LaymanExplanation section="scenario_browser">
+        These are sample questions from the benchmark. Each is a clinical vignette — a
+        fake patient with measured clock values plus a yes/no question. The colored tags
+        are the "correct" labels the model is expected to identify.
+      </LaymanExplanation>
     </section>
   );
 }
