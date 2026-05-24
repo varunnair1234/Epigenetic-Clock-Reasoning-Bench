@@ -33,6 +33,7 @@ dist/
 GSE*_RAW.tar
 GSE*_signal_intensities*
 
-# Eval harness outputs — regenerable
-/eval_outputs/
+# Eval harness outputs — raw per-call text files are regenerable;
+# leaderboard.csv and details.json are tracked intentionally.
+/eval_outputs/raw_responses/
 /runs/
