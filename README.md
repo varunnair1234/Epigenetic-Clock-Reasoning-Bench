@@ -39,11 +39,9 @@ Three stages: **simulate → generate → evaluate**.
 
 ## Models evaluated
 
-- GPT-4o (OpenAI)
-- Claude Sonnet 4 (Anthropic)
-- Gemini 1.5 Pro (Google)
-- BioMedLM (PubMed-trained)
-- MedAlpaca (medical-QA fine-tuned)
+- **Claude Sonnet 4.6** (Anthropic) — 77.2% overall, 96.1% on Task A
+- **BioLLM** (HuggingFace longevity-llm endpoint) — 55.4% overall
+- **Gemini 1.5 Flash** (Google, fallback chain) — pending API key
 
 The gap between general LLMs and bio-specialized models is the key research finding.
 
@@ -66,11 +64,28 @@ The gap between general LLMs and bio-specialized models is the key research find
 
 ## Deliverables
 
-1. `benchmark.json` — 500+ scenarios with ground-truth labels
-2. Eval harness script — reproducible scoring pipeline
-3. `leaderboard.csv` — model comparison across task types
-4. LongevityBench-compatible export format
+1. `benchmark.json` — 200 scenarios with ground-truth labels (A:80, B:50, C:40, D:30)
+2. `pipeline.py` — master orchestrator (`--demo`, `--generate`, `--evaluate`, `--full`)
+3. `eval_outputs/leaderboard.csv` — model comparison across task types
+4. `eval_outputs/details.json` — per-scenario breakdown (400 entries, 2 models)
+5. React + FastAPI dashboard (`frontend/` + `api/server.py`)
 
-## Status
+## Quick start
 
-Project scaffold — no implementation yet.
+```bash
+# Install deps
+pip install -r requirements.txt
+
+# Run demo (5 scenarios, no API key required for generation)
+python pipeline.py --demo
+
+# Run full evaluation (requires ANTHROPIC_API_KEY in .env)
+python pipeline.py --evaluate
+```
+
+## Results
+
+| Model | Overall | Task A | Task B | Task C | Task D |
+|-------|---------|--------|--------|--------|--------|
+| Claude Sonnet 4.6 | 77.2% | 96.1% | 40.0% | 88.1% | 66.2% |
+| BioLLM | 55.4% | 63.9% | 45.0% | 63.9% | 34.6% |
