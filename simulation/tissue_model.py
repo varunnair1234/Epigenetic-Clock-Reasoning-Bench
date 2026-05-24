@@ -160,6 +160,27 @@ class TissueModel(mesa.Model):
             },
         }
 
+    # ----------------------------------------------------------------- grid
+    _STATE_CODE = {
+        CellAgent.NORMAL: 0,
+        CellAgent.STRESSED: 1,
+        CellAgent.SENESCENT: 2,
+        CellAgent.DEAD: 3,
+    }
+
+    def get_grid_state(self) -> list[list[int]]:
+        """Return a GRID_SIZE × GRID_SIZE matrix of state codes.
+
+        0=normal, 1=stressed, 2=senescent, 3=dead. Empty cells (shouldn't
+        happen with SingleGrid + full placement) are emitted as 0.
+        """
+        n = P.GRID_SIZE
+        grid: list[list[int]] = [[0 for _ in range(n)] for _ in range(n)]
+        for agent in self.agents:
+            x, y = agent.pos
+            grid[y][x] = self._STATE_CODE.get(agent.state, 0)
+        return grid
+
     # -------------------------------------------------------------- helpers
     def _propagate_sasp(self) -> None:
         """Senescent cells deliver SASP signal to neighbors in radius."""
