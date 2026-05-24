@@ -1,0 +1,547 @@
+{
+  "models": {
+    "claude": {
+      "accelerated_aging": {
+        "tp": 65,
+        "fp": 5,
+        "tn": 127,
+        "fn": 3,
+        "n": 200,
+        "skipped": 0,
+        "precision": 0.9286,
+        "recall": 0.9559,
+        "f1": 0.942,
+        "balanced_accuracy": 0.959,
+        "accuracy": 0.96
+      },
+      "fast_pacer": {
+        "tp": 18,
+        "fp": 2,
+        "tn": 180,
+        "fn": 0,
+        "n": 200,
+        "skipped": 0,
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9474,
+        "balanced_accuracy": 0.9945,
+        "accuracy": 0.99
+      },
+      "high_mortality_risk": {
+        "tp": 142,
+        "fp": 2,
+        "tn": 30,
+        "fn": 26,
+        "n": 200,
+        "skipped": 0,
+        "precision": 0.9861,
+        "recall": 0.8452,
+        "f1": 0.9103,
+        "balanced_accuracy": 0.8914,
+        "accuracy": 0.86
+      },
+      "clock_discordance": {
+        "tp": 143,
+        "fp": 23,
+        "tn": 26,
+        "fn": 8,
+        "n": 200,
+        "skipped": 0,
+        "precision": 0.8614,
+        "recall": 0.947,
+        "f1": 0.9022,
+        "balanced_accuracy": 0.7388,
+        "accuracy": 0.845
+      },
+      "intervention_effective": {
+        "tp": 49,
+        "fp": 0,
+        "tn": 0,
+        "fn": 1,
+        "n": 50,
+        "skipped": 150,
+        "precision": 1.0,
+        "recall": 0.98,
+        "f1": 0.9899,
+        "balanced_accuracy": 0.49,
+        "accuracy": 0.98
+      }
+    },
+    "biollm": {
+      "accelerated_aging": {
+        "tp": 46,
+        "fp": 64,
+        "tn": 68,
+        "fn": 22,
+        "n": 200,
+        "skipped": 0,
+        "precision": 0.4182,
+        "recall": 0.6765,
+        "f1": 0.5169,
+        "balanced_accuracy": 0.5958,
+        "accuracy": 0.57
+      },
+      "fast_pacer": {
+        "tp": 16,
+        "fp": 31,
+        "tn": 151,
+        "fn": 2,
+        "n": 200,
+        "skipped": 0,
+        "precision": 0.3404,
+        "recall": 0.8889,
+        "f1": 0.4923,
+        "balanced_accuracy": 0.8593,
+        "accuracy": 0.835
+      },
+      "high_mortality_risk": {
+        "tp": 99,
+        "fp": 15,
+        "tn": 17,
+        "fn": 69,
+        "n": 200,
+        "skipped": 0,
+        "precision": 0.8684,
+        "recall": 0.5893,
+        "f1": 0.7021,
+        "balanced_accuracy": 0.5603,
+        "accuracy": 0.58
+      },
+      "clock_discordance": {
+        "tp": 120,
+        "fp": 32,
+        "tn": 17,
+        "fn": 31,
+        "n": 200,
+        "skipped": 0,
+        "precision": 0.7895,
+        "recall": 0.7947,
+        "f1": 0.7921,
+        "balanced_accuracy": 0.5708,
+        "accuracy": 0.685
+      },
+      "intervention_effective": {
+        "tp": 42,
+        "fp": 0,
+        "tn": 0,
+        "fn": 8,
+        "n": 50,
+        "skipped": 150,
+        "precision": 1.0,
+        "recall": 0.84,
+        "f1": 0.913,
+        "balanced_accuracy": 0.42,
+        "accuracy": 0.84
+      }
+    }
+  },
+  "baselines": {
+    "always_true": {
+      "leaderboard": [
+        {
+          "task_type": "ALL",
+          "model": "always_true",
+          "n_scenarios": 200,
+          "earned": 4260,
+          "max": 8600,
+          "pct": 49.5,
+          "errors": 0,
+          "parse_fails": 0
+        },
+        {
+          "task_type": "A_clock_interpretation",
+          "model": "always_true",
+          "n_scenarios": 80,
+          "earned": 1905,
+          "max": 3600,
+          "pct": 52.9,
+          "errors": 0,
+          "parse_fails": 0
+        },
+        {
+          "task_type": "B_intervention_reasoning",
+          "model": "always_true",
+          "n_scenarios": 50,
+          "earned": 1780,
+          "max": 2000,
+          "pct": 89.0,
+          "errors": 0,
+          "parse_fails": 0
+        },
+        {
+          "task_type": "C_multi_tissue_discordance",
+          "model": "always_true",
+          "n_scenarios": 40,
+          "earned": 225,
+          "max": 1800,
+          "pct": 12.5,
+          "errors": 0,
+          "parse_fails": 0
+        },
+        {
+          "task_type": "D_confounders_artifacts",
+          "model": "always_true",
+          "n_scenarios": 30,
+          "earned": 350,
+          "max": 1200,
+          "pct": 29.2,
+          "errors": 0,
+          "parse_fails": 0
+        }
+      ],
+      "per_label": {
+        "accelerated_aging": {
+          "tp": 68,
+          "fp": 132,
+          "tn": 0,
+          "fn": 0,
+          "n": 200,
+          "skipped": 0,
+          "precision": 0.34,
+          "recall": 1.0,
+          "f1": 0.5075,
+          "balanced_accuracy": 0.5,
+          "accuracy": 0.34
+        },
+        "fast_pacer": {
+          "tp": 18,
+          "fp": 182,
+          "tn": 0,
+          "fn": 0,
+          "n": 200,
+          "skipped": 0,
+          "precision": 0.09,
+          "recall": 1.0,
+          "f1": 0.1651,
+          "balanced_accuracy": 0.5,
+          "accuracy": 0.09
+        },
+        "high_mortality_risk": {
+          "tp": 168,
+          "fp": 32,
+          "tn": 0,
+          "fn": 0,
+          "n": 200,
+          "skipped": 0,
+          "precision": 0.84,
+          "recall": 1.0,
+          "f1": 0.913,
+          "balanced_accuracy": 0.5,
+          "accuracy": 0.84
+        },
+        "clock_discordance": {
+          "tp": 151,
+          "fp": 49,
+          "tn": 0,
+          "fn": 0,
+          "n": 200,
+          "skipped": 0,
+          "precision": 0.755,
+          "recall": 1.0,
+          "f1": 0.8604,
+          "balanced_accuracy": 0.5,
+          "accuracy": 0.755
+        },
+        "intervention_effective": {
+          "tp": 50,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "n": 50,
+          "skipped": 150,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "balanced_accuracy": 0.5,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "always_false": {
+      "leaderboard": [
+        {
+          "task_type": "ALL",
+          "model": "always_false",
+          "n_scenarios": 200,
+          "earned": 3090,
+          "max": 8600,
+          "pct": 35.9,
+          "errors": 0,
+          "parse_fails": 0
+        },
+        {
+          "task_type": "A_clock_interpretation",
+          "model": "always_false",
+          "n_scenarios": 80,
+          "earned": 1695,
+          "max": 3600,
+          "pct": 47.1,
+          "errors": 0,
+          "parse_fails": 0
+        },
+        {
+          "task_type": "B_intervention_reasoning",
+          "model": "always_false",
+          "n_scenarios": 50,
+          "earned": 220,
+          "max": 2000,
+          "pct": 11.0,
+          "errors": 0,
+          "parse_fails": 0
+        },
+        {
+          "task_type": "C_multi_tissue_discordance",
+          "model": "always_false",
+          "n_scenarios": 40,
+          "earned": 775,
+          "max": 1800,
+          "pct": 43.1,
+          "errors": 0,
+          "parse_fails": 0
+        },
+        {
+          "task_type": "D_confounders_artifacts",
+          "model": "always_false",
+          "n_scenarios": 30,
+          "earned": 400,
+          "max": 1200,
+          "pct": 33.3,
+          "errors": 0,
+          "parse_fails": 0
+        }
+      ],
+      "per_label": {
+        "accelerated_aging": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 132,
+          "fn": 68,
+          "n": 200,
+          "skipped": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "accuracy": 0.66
+        },
+        "fast_pacer": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 182,
+          "fn": 18,
+          "n": 200,
+          "skipped": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "accuracy": 0.91
+        },
+        "high_mortality_risk": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 32,
+          "fn": 168,
+          "n": 200,
+          "skipped": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "accuracy": 0.16
+        },
+        "clock_discordance": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 49,
+          "fn": 151,
+          "n": 200,
+          "skipped": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "accuracy": 0.245
+        },
+        "intervention_effective": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 50,
+          "n": 50,
+          "skipped": 150,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.0,
+          "accuracy": 0.0
+        }
+      }
+    },
+    "majority_class": {
+      "leaderboard": [
+        {
+          "task_type": "ALL",
+          "model": "majority_class",
+          "n_scenarios": 200,
+          "earned": 5410,
+          "max": 8600,
+          "pct": 62.9,
+          "errors": 0,
+          "parse_fails": 0
+        },
+        {
+          "task_type": "A_clock_interpretation",
+          "model": "majority_class",
+          "n_scenarios": 80,
+          "earned": 2455,
+          "max": 3600,
+          "pct": 68.2,
+          "errors": 0,
+          "parse_fails": 0
+        },
+        {
+          "task_type": "B_intervention_reasoning",
+          "model": "majority_class",
+          "n_scenarios": 50,
+          "earned": 1780,
+          "max": 2000,
+          "pct": 89.0,
+          "errors": 0,
+          "parse_fails": 0
+        },
+        {
+          "task_type": "C_multi_tissue_discordance",
+          "model": "majority_class",
+          "n_scenarios": 40,
+          "earned": 775,
+          "max": 1800,
+          "pct": 43.1,
+          "errors": 0,
+          "parse_fails": 0
+        },
+        {
+          "task_type": "D_confounders_artifacts",
+          "model": "majority_class",
+          "n_scenarios": 30,
+          "earned": 400,
+          "max": 1200,
+          "pct": 33.3,
+          "errors": 0,
+          "parse_fails": 0
+        }
+      ],
+      "per_label": {
+        "accelerated_aging": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 132,
+          "fn": 68,
+          "n": 200,
+          "skipped": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "accuracy": 0.66
+        },
+        "fast_pacer": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 182,
+          "fn": 18,
+          "n": 200,
+          "skipped": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "accuracy": 0.91
+        },
+        "high_mortality_risk": {
+          "tp": 168,
+          "fp": 32,
+          "tn": 0,
+          "fn": 0,
+          "n": 200,
+          "skipped": 0,
+          "precision": 0.84,
+          "recall": 1.0,
+          "f1": 0.913,
+          "balanced_accuracy": 0.5,
+          "accuracy": 0.84
+        },
+        "clock_discordance": {
+          "tp": 151,
+          "fp": 49,
+          "tn": 0,
+          "fn": 0,
+          "n": 200,
+          "skipped": 0,
+          "precision": 0.755,
+          "recall": 1.0,
+          "f1": 0.8604,
+          "balanced_accuracy": 0.5,
+          "accuracy": 0.755
+        },
+        "intervention_effective": {
+          "tp": 50,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "n": 50,
+          "skipped": 150,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "balanced_accuracy": 0.5,
+          "accuracy": 1.0
+        }
+      }
+    }
+  },
+  "class_distribution": {
+    "accelerated_aging": {
+      "true": 68,
+      "false": 132,
+      "null": 0,
+      "pct_true": 34.0,
+      "imbalance_ratio": 1.94
+    },
+    "fast_pacer": {
+      "true": 18,
+      "false": 182,
+      "null": 0,
+      "pct_true": 9.0,
+      "imbalance_ratio": 10.11
+    },
+    "high_mortality_risk": {
+      "true": 168,
+      "false": 32,
+      "null": 0,
+      "pct_true": 84.0,
+      "imbalance_ratio": 5.25
+    },
+    "clock_discordance": {
+      "true": 151,
+      "false": 49,
+      "null": 0,
+      "pct_true": 75.5,
+      "imbalance_ratio": 3.08
+    },
+    "intervention_effective": {
+      "true": 50,
+      "false": 0,
+      "null": 150,
+      "pct_true": 100.0,
+      "imbalance_ratio": null
+    }
+  },
+  "majority_per_label": {
+    "accelerated_aging": false,
+    "fast_pacer": false,
+    "high_mortality_risk": true,
+    "clock_discordance": true,
+    "intervention_effective": true
+  }
+}

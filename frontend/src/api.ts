@@ -1,5 +1,6 @@
 import type {
   Stats, SimulateResponse, LeaderboardRow, ErrorBreakdownRow, BenchmarkScenario,
+  PerLabelMetric, ClassDistribution,
 } from "./types";
 
 const BASE = "";  // Vite proxy forwards /api/* → FastAPI on :8000
@@ -25,4 +26,7 @@ export const api = {
                     );
                   },
   errorBreakdown:  () => get<{ rows: ErrorBreakdownRow[] }>("/api/error_breakdown"),
+  perLabelMetrics: () => get<{ rows: PerLabelMetric[] }>("/api/per_label_metrics"),
+  classDistribution: () => get<ClassDistribution>("/api/class_distribution"),
+  baselines:       () => get<{ rows: LeaderboardRow[] }>("/api/baselines"),
 };

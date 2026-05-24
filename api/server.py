@@ -223,6 +223,44 @@ def error_breakdown() -> dict:
     return {"rows": rows}
 
 
+@app.get("/api/per_label_metrics")
+def per_label_metrics() -> dict:
+    """Per (model, label) F1, balanced accuracy, confusion matrix counts."""
+    rows = _read_csv(EVAL_OUT / "per_label_metrics.csv")
+    for r in rows:
+        for k in ("n", "tp", "fp", "tn", "fn"):
+            if k in r:
+                try: r[k] = int(r[k])
+                except ValueError: pass
+        for k in ("accuracy", "balanced_accuracy", "precision", "recall", "f1"):
+            if k in r:
+                try: r[k] = float(r[k]) if r[k] not in ("", "None") else None
+                except ValueError: r[k] = None
+    return {"rows": rows}
+
+
+@app.get("/api/class_distribution")
+def class_distribution() -> dict:
+    """Ground-truth True/False/null counts per label — exposes imbalance."""
+    data = _read_json(EVAL_OUT / "class_distribution.json")
+    return data or {}
+
+
+@app.get("/api/baselines")
+def baselines() -> dict:
+    """Naive baseline leaderboard rows (always_true / always_false / majority)."""
+    rows = _read_csv(EVAL_OUT / "baseline_leaderboard.csv")
+    for r in rows:
+        for k in ("n_scenarios", "earned", "max", "errors", "parse_fails"):
+            if k in r:
+                try: r[k] = int(r[k])
+                except ValueError: pass
+        if "pct" in r:
+            try: r["pct"] = float(r["pct"])
+            except ValueError: pass
+    return {"rows": rows}
+
+
 @app.get("/api/calibration")
 def calibration() -> dict:
     data = _read_json(EVAL_OUT / "calibration.json")

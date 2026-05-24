@@ -55,6 +55,27 @@ export interface ErrorBreakdownRow {
   pct_of_wrong: number;
 }
 
+export interface PerLabelMetric {
+  model: string;
+  label: string;
+  n: number;
+  tp: number; fp: number; tn: number; fn: number;
+  accuracy: number | null;
+  balanced_accuracy: number | null;
+  precision: number | null;
+  recall: number | null;
+  f1: number | null;
+}
+
+export interface ClassDistEntry {
+  true: number;
+  false: number;
+  null: number;
+  pct_true: number | null;
+  imbalance_ratio: number | null;
+}
+export type ClassDistribution = Record<string, ClassDistEntry>;
+
 export interface BenchmarkScenario {
   scenario_id: number;
   task_type: string;          // "A" | "B" | "C" | "D"

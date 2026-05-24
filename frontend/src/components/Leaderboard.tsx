@@ -48,19 +48,33 @@ const MODEL_LABELS: Record<string, string> = {
   claude: "Claude Sonnet 4.6",
   gemini: "Gemini Flash",
   biollm: "BioLLM (Longevity-Tuned)",
+  always_true: "always_true",
+  always_false: "always_false",
+  majority_class: "majority_class",
 };
+
+const BASELINE_NAMES = new Set(["always_true", "always_false", "majority_class"]);
 
 export default function Leaderboard() {
   const [rows, setRows] = useState<LeaderboardRow[]>([]);
+  const [baselineRows, setBaselineRows] = useState<LeaderboardRow[]>([]);
   const [err, setErr] = useState<string | null>(null);
 
   useEffect(() => {
     api.leaderboard()
       .then(d => setRows(d.rows))
       .catch(e => setErr(String(e)));
+    api.baselines()
+      .then(d => setBaselineRows(d.rows))
+      .catch(() => {});
   }, []);
 
   const models = useMemo(() => aggregate(rows), [rows]);
+  const baselineModels = useMemo(() => aggregate(baselineRows), [baselineRows]);
+  const bestBaselinePct = useMemo(
+    () => baselineModels.reduce((m, b) => Math.max(m, b.overall_pct), 0),
+    [baselineModels]
+  );
 
   return (
     <section className="mb-16">
@@ -114,11 +128,47 @@ export default function Leaderboard() {
                   </td>
                 </tr>
               ))}
+
+              {baselineModels.length > 0 && (
+                <tr className="border-t-2 border-zinc-700">
+                  <td colSpan={7} className="px-4 py-2 text-[10px] tracking-widest text-zinc-500 bg-zinc-900/50">
+                    BASELINES — naive predictors scored under the same rubric
+                  </td>
+                </tr>
+              )}
+              {baselineModels.map(m => (
+                <tr key={m.model} className="border-t border-zinc-800 bg-zinc-900/30">
+                  <td className="px-4 py-3 text-zinc-700 italic">—</td>
+                  <td className="px-4 py-3 italic text-zinc-500">
+                    {MODEL_LABELS[m.model] ?? m.model}
+                  </td>
+                  <td className={`px-4 py-3 text-right font-mono italic text-zinc-500`}>
+                    {m.overall_pct.toFixed(1)}%
+                  </td>
+                  {TASK_LETTERS.map(t => (
+                    <td key={t} className="px-4 py-3 text-right font-mono italic text-zinc-500">
+                      {m.task_pcts[t] !== undefined ? `${m.task_pcts[t].toFixed(1)}%` : "—"}
+                    </td>
+                  ))}
+                  <td className="px-4 py-3 text-right text-zinc-700 italic">—</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
       )}
 
+      {models.length > 0 && bestBaselinePct > 0 && (
+        <div className="mt-4 panel border-l-4 border-emerald-500 text-sm">
+          <span className="text-emerald-400 font-bold">Signal above baseline:</span>{" "}
+          Top model scores <span className="font-mono text-emerald-400">{models[0].overall_pct.toFixed(1)}%</span>
+          {" "}vs. best naive baseline (<code className="text-zinc-400">{baselineModels.find(b => b.overall_pct === bestBaselinePct)?.model}</code>) at{" "}
+          <span className="font-mono text-zinc-400">{bestBaselinePct.toFixed(1)}%</span> —
+          {" "}a <span className="font-mono text-emerald-400">+{(models[0].overall_pct - bestBaselinePct).toFixed(1)}pp</span>{" "}
+          gap. With imbalanced labels (see Class Distribution below), that gap is the part of the
+          headline number that represents real reasoning, not majority-class guessing.
+        </div>
+      )}
       {models.length >= 2 && <LeaderboardInsight models={models} />}
     </section>
   );

@@ -1,0 +1,37 @@
+{
+  "accelerated_aging": {
+    "true": 68,
+    "false": 132,
+    "null": 0,
+    "pct_true": 34.0,
+    "imbalance_ratio": 1.94
+  },
+  "fast_pacer": {
+    "true": 18,
+    "false": 182,
+    "null": 0,
+    "pct_true": 9.0,
+    "imbalance_ratio": 10.11
+  },
+  "high_mortality_risk": {
+    "true": 168,
+    "false": 32,
+    "null": 0,
+    "pct_true": 84.0,
+    "imbalance_ratio": 5.25
+  },
+  "clock_discordance": {
+    "true": 151,
+    "false": 49,
+    "null": 0,
+    "pct_true": 75.5,
+    "imbalance_ratio": 3.08
+  },
+  "intervention_effective": {
+    "true": 50,
+    "false": 0,
+    "null": 150,
+    "pct_true": 100.0,
+    "imbalance_ratio": null
+  }
+}

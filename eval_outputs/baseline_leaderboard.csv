@@ -1,0 +1,16 @@
+task_type,model,n_scenarios,earned,max,pct,errors,parse_fails
+ALL,always_true,200,4260,8600,49.5,0,0
+A_clock_interpretation,always_true,80,1905,3600,52.9,0,0
+B_intervention_reasoning,always_true,50,1780,2000,89.0,0,0
+C_multi_tissue_discordance,always_true,40,225,1800,12.5,0,0
+D_confounders_artifacts,always_true,30,350,1200,29.2,0,0
+ALL,always_false,200,3090,8600,35.9,0,0
+A_clock_interpretation,always_false,80,1695,3600,47.1,0,0
+B_intervention_reasoning,always_false,50,220,2000,11.0,0,0
+C_multi_tissue_discordance,always_false,40,775,1800,43.1,0,0
+D_confounders_artifacts,always_false,30,400,1200,33.3,0,0
+ALL,majority_class,200,5410,8600,62.9,0,0
+A_clock_interpretation,majority_class,80,2455,3600,68.2,0,0
+B_intervention_reasoning,majority_class,50,1780,2000,89.0,0,0
+C_multi_tissue_discordance,majority_class,40,775,1800,43.1,0,0
+D_confounders_artifacts,majority_class,30,400,1200,33.3,0,0

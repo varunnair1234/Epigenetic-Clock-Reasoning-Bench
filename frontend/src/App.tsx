@@ -4,6 +4,8 @@ import Leaderboard from "./components/Leaderboard";
 import ScenarioBrowser from "./components/ScenarioBrowser";
 import ScoreBreakdown from "./components/ScoreBreakdown";
 import ErrorAnalysis from "./components/ErrorAnalysis";
+import ClassDistribution from "./components/ClassDistribution";
+import PerLabelMetrics from "./components/PerLabelMetrics";
 
 export default function App() {
   return (
@@ -15,6 +17,8 @@ export default function App() {
         <ScenarioBrowser />
         <ScoreBreakdown />
         <ErrorAnalysis />
+        <ClassDistribution />
+        <PerLabelMetrics />
 
         <footer className="border-t border-zinc-800 pt-6 mt-12 text-xs text-zinc-500">
           <div>Calibrated on GSE40279 (656 samples) and GSE51057 (329 multi-tissue samples) from NCBI GEO</div>
