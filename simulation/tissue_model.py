@@ -160,6 +160,15 @@ class TissueModel(mesa.Model):
             },
         }
 
+    def run(self, n_steps: int) -> None:
+        """Advance the simulation by ``n_steps`` monthly timesteps."""
+        for _ in range(n_steps):
+            self.step()
+
+    def get_tissue_clocks(self) -> dict[str, float]:
+        """Return the current clock values (convenience wrapper over snapshot)."""
+        return self.snapshot()["clocks"]
+
     # ----------------------------------------------------------------- grid
     _STATE_CODE = {
         CellAgent.NORMAL: 0,
